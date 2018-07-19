@@ -10,8 +10,8 @@ This is used for scribble segmentation. The label dataset link is [here]. (https
 
 Also **xml.etree.ElementTree** is used to paser xml file and [**Bresnham algorithm**] is taken to draw lines. (http://www.roguebasin.com/index.php?title=Bresenham%27s_Line_Algorithm#Python)
 
-![orignial image](image\ori.jpg)
+![orignial image](https://github.com/yananfei-Bette/pascal_dataset.git/image/ori.jpg)
 
-![label](image\demo.jpg)
+![label](https://github.com/yananfei-Bette/pascal_dataset.git/image/demo.jpg)
 
-![result](image\demo_.png)
+![result](https://github.com/yananfei-Bette/pascal_dataset.git/image/demo_.png)
