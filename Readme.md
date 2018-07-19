@@ -10,10 +10,14 @@ This is used for scribble segmentation. The label dataset link is [here](https:/
 
 Also **xml.etree.ElementTree** is used to paser xml file and [**Bresnham algorithm**](http://www.roguebasin.com/index.php?title=Bresenham%27s_Line_Algorithm#Python) is taken to draw lines.
 
-![orignial image](https://github.com/yananfei-Bette/pascal_dataset/tree/master/image/ori.jpg)
+A sample from PASCAL Dataset.
+
+![orignial image](https://github.com/yananfei-Bette/pascal_dataset/blob/master/image/ori.jpg)
+
+The demo given by [paper](https://arxiv.org/pdf/1604.05144.pdf).
 
 ![label](https://github.com/yananfei-Bette/pascal_dataset/blob/master/image/demo.jpg)
 
-![result](https://github.com/yananfei-Bette/pascal_dataset/tree/master/image/demo_.png)
+My result.
 
-![stack Overflow](http://lmsotfy.com/so.png)
+![result](https://github.com/yananfei-Bette/pascal_dataset/blob/master/image/demo_.png)
