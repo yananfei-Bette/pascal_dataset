@@ -76,7 +76,7 @@ labelDic = {'plane':2, 'bike':3, 'bird':4, 'boat':5, 'bottle':6, 'bus':7, 'car':
 # main
 #############
 xmlPath = 'pascal_2012/*.xml'
-saveFolder = 'pscal_2012_label'
+saveFolder = 'pascal_2012_label'
 labelPath = os.path.join(saveFolder,'label')
 labelVisualPath = os.path.join(saveFolder,'labelVisualize')
 if not os.path.isdir(labelPath): os.makedirs(labelPath)
@@ -89,6 +89,7 @@ xmlFileAddrs = glob.glob(xmlPath)
 for xml in xmlFileAddrs:
 
     #xml = 'pascal_2012/2008_001196.xml'
+    #xml = 'demo/2008_003147.xml'
 
     print('Processing {}................'.format(xml))
     fLog.write('Processing {}................\n'.format(xml))
@@ -128,7 +129,7 @@ for xml in xmlFileAddrs:
             polyDic[classTag].append(coord)
 
     # create label
-    img = np.zeros((height, width),dtype=np.float32)
+    img = np.zeros((height, width), dtype=np.uint8)
     labelNames = polyDic.keys()
 
     for l in labelNames:
@@ -164,11 +165,14 @@ for xml in xmlFileAddrs:
                     fLog.write('height and width ({},{})  y and x ({}, {})\n'.format(height, width, y, x))
                     continue
 
-                img[y,x] = (lNum-60.0)/(2.0-60.0)
+                img[y, x] = lNum
 
 
     # save visualized image
-    scipy.misc.imsave(os.path.join(labelPath, xmlName+'.png'), img)
-    scipy.misc.imsave(os.path.join(labelVisualPath, xmlName+'.png'), img*255)
+    #print(np.max(img))
+    scipy.misc.imsave(os.path.join(labelPath, xmlName+'.png'), img.astype(np.uint8))
+    #scipy misc imsave will rescale image.
+    scipy.misc.imsave(os.path.join(labelVisualPath, xmlName+'.png'), img)
+    #break
 
 fLog.close()
