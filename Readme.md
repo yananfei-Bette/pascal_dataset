@@ -12,8 +12,8 @@ Also **xml.etree.ElementTree** is used to paser xml file and [**Bresnham algorit
 
 ![orignial image](https://github.com/yananfei-Bette/pascal_dataset/tree/master/image/ori.jpg)
 
-![label](https://github.com/yananfei-Bette/pascal_dataset.git/image/demo.jpg)
+![label](https://github.com/yananfei-Bette/pascal_dataset/tree/master/image/demo.jpg)
 
-![result](https://github.com/yananfei-Bette/pascal_dataset.git/image/demo_.png)
+![result](https://github.com/yananfei-Bette/pascal_dataset/tree/master/image/demo_.png)
 
 ![stack Overflow](http://lmsotfy.com/so.png)
